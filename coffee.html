@@ -2,220 +2,341 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Ethiopian coffee export from Fisiha Guesh Import and Export.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ethiopian coffee export from Fisha Import and Export.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/product-page.css">
-  <title>Coffee Export | Fisiha Guesh Import & Export</title>
+  <title>Coffee Export | Fisha Import & Export</title>
   <style>
-    /* Slightly transparent header, like a modern glass navigation bar */
-    header{
-      background:rgba(255,255,255,.90);
-      backdrop-filter:blur(10px);
-      -webkit-backdrop-filter:blur(10px);
+    header {
+      background: rgba(255, 255, 255, .90);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
     }
 
-    /* Coffee hero follows the same visual structure as the product pages */
-    .coffee-product-hero{
-      background:linear-gradient(120deg,#1a352a,#725332);
+    .coffee-product-hero {
+      background: linear-gradient(120deg, #1a352a, #725332);
     }
 
-    .coffee-product-photo{
-      height:390px;
-      border-radius:14px;
-      position:relative;
-      overflow:hidden;
-      box-shadow:0 25px 70px rgba(0,0,0,.22);
+    .coffee-product-photo {
+      height: 390px;
+      border-radius: 14px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 25px 70px rgba(0, 0, 0, .22);
     }
 
-    .coffee-product-photo img{
-      width:100%;
-      height:100%;
-      object-fit:cover;
-      display:block;
+    .coffee-product-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
 
-    .coffee-product-photo:before{
-      content:"";
-      position:absolute;
-      inset:18px;
-      border:1px solid rgba(255,255,255,.35);
-      pointer-events:none;
-      z-index:1;
+    .coffee-product-photo:before {
+      content: "";
+      position: absolute;
+      inset: 18px;
+      border: 1px solid rgba(255, 255, 255, .35);
+      pointer-events: none;
+      z-index: 1;
     }
 
-    .coffee-photo-label{
-      position:absolute;
-      z-index:2;
-      left:28px;
-      bottom:28px;
-      color:#fff;
-      font-size:.72rem;
-      letter-spacing:.2em;
-      font-weight:700;
-      text-transform:uppercase;
+    .coffee-photo-label {
+      position: absolute;
+      z-index: 2;
+      left: 28px;
+      bottom: 28px;
+      color: #fff;
+      font-size: .72rem;
+      letter-spacing: .2em;
+      font-weight: 700;
+      text-transform: uppercase;
     }
 
-    @media(max-width:800px){
-      .coffee-product-photo{height:300px}
-    }
-
-    @media(max-width:520px){
-      .coffee-product-photo{
-        height:245px;
-        border-radius:10px;
+    @media (max-width: 800px) {
+      .coffee-product-photo {
+        height: 300px;
       }
-      .coffee-product-photo:before{inset:12px}
-      .coffee-photo-label{left:20px;bottom:20px}
+    }
+
+    @media (max-width: 520px) {
+      .coffee-product-photo {
+        height: 245px;
+        border-radius: 10px;
+      }
+      .coffee-product-photo:before {
+        inset: 12px;
+      }
+      .coffee-photo-label {
+        left: 20px;
+        bottom: 20px;
+      }
     }
   </style>
 </head>
 <body>
 
-<header>
-  <div class="wrap nav">
-    <a class="logo" href="index.html"><b>FG</b><span>FISIHA GUESH<small>IMPORT & EXPORT</small></span></a>
-    <button class="menu" aria-label="Toggle navigation menu">☰</button>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="products.html">Products</a>
-      <a href="coffee.html" class="active">Coffee</a>
-      <a href="contact.html">Contact</a>
-      <a class="navbtn" target="_blank" rel="noopener" href="https://wa.me/251911349179">WhatsApp Us</a>
-    </nav>
-  </div>
-</header>
+  <header>
+    <div class="wrap nav">
+      <a class="logo" href="index.html">
+        <img src="images/fish.png" alt="Fisha Import and Export Logo" class="logo-img">
+      </a>
+      <button class="menu" aria-label="Toggle navigation menu">☰</button>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="products.html">Products</a>
+        <a href="coffee.html" class="active">Coffee</a>
+        <a href="contact.html">Contact</a>
+        <a class="navbtn" target="_blank" rel="noopener" href="https://wa.me/251911349179">WhatsApp Us</a>
+      </nav>
+    </div>
+  </header>
 
-<main>
+  <main>
+    <section class="product-hero coffee-product-hero">
+      <div class="wrap product-hero-grid">
+        <div>
+          <label>ETHIOPIAN COFFEE EXPORT</label>
+          <h1>From Ethiopia's coffee origins<br><em>to international markets.</em></h1>
+          <p>Focusing on quality, reliability and professional export service.</p>
+          <a class="btn gold" target="_blank" rel="noopener" href="https://wa.me/251911349179">WhatsApp Us →</a>
+          <a class="btn light" href="contact.html">Make an Inquiry</a>
+        </div>
 
-  <!-- Coffee Hero -->
-  <section class="product-hero coffee-product-hero">
-    <div class="wrap product-hero-grid">
+        <div class="coffee-product-photo">
+          <img 
+            src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Coffee_beans_in_Ethiopia.jpg?width=1280" 
+            alt="Ethiopian coffee beans" 
+            loading="eager" 
+            decoding="async" 
+            referrerpolicy="no-referrer" 
+            fetchpriority="high"
+          >
+          <span class="coffee-photo-label">Ethiopian Coffee</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap split">
       <div>
-        <label>ETHIOPIAN COFFEE EXPORT</label>
-        <h1>From Ethiopia's coffee origins<br><em>to international markets.</em></h1>
-        <p>Focusing on quality, reliability and professional export service.</p>
-        <a class="btn gold" target="_blank" rel="noopener" href="https://wa.me/251911349179">WhatsApp Us →</a>
-        <a class="btn light" href="contact.html">Make an Inquiry</a>
+        <label>OUR COFFEE</label>
+        <h2>Ethiopian coffee for international buyers.</h2>
       </div>
-
-      <div class="coffee-product-photo">
-        <img
-          src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Coffee_beans_in_Ethiopia.jpg?width=1280"
-          alt="Ethiopian coffee beans"
-          loading="eager"
-          decoding="async"
-          referrerpolicy="no-referrer"
-          fetchpriority="high"
-        >
-        <span class="coffee-photo-label">Ethiopian Coffee</span>
+      <div>
+        <p>Ethiopian coffee is one of the country's most recognized agricultural products. Fisha Import and Export focuses on connecting quality Ethiopian coffee with international buyers.</p>
+        <p>For coffee export inquiries, contact our team directly by phone, email or WhatsApp.</p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Overview -->
-  <section class="section wrap split">
-    <div>
-      <label>OUR COFFEE</label>
-      <h2>Ethiopian coffee for international buyers.</h2>
-    </div>
-    <div>
-      <p>Ethiopian coffee is one of the country's most recognized agricultural products. Fisiha Guesh Import and Export focuses on connecting quality Ethiopian coffee with international buyers.</p>
-      <p>For coffee export inquiries, contact our team directly by phone, email or WhatsApp.</p>
-    </div>
-  </section>
+    <section class="section">
+      <div class="wrap">
+        <label>COFFEE IN FOCUS</label>
+        <h2>From beans to preparation.</h2>
+        <p>Explore a few visuals that reflect Ethiopia’s coffee culture and export story.</p>
 
-  <!-- Coffee Gallery -->
-  <section class="section">
-    <div class="wrap">
-      <label>COFFEE IN FOCUS</label>
-      <h2>From beans to preparation.</h2>
-      <p>Explore a few visuals that reflect Ethiopia’s coffee culture and export story.</p>
-
-      <div class="image-gallery">
-        <figure>
-          <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Coffee_beans_in_Ethiopia.jpg?width=1280" alt="Ethiopian coffee beans" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-          <figcaption>Ethiopian coffee beans</figcaption>
-        </figure>
-        <figure>
-          <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Bunna4_-_Roasting_coffee_beans.jpg?width=1280" alt="Coffee beans being roasted in Ethiopia" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-          <figcaption>Traditional coffee roasting</figcaption>
-        </figure>
-        <figure>
-          <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Coffee_Beans_Drying_(11586771164).jpg?width=1024" alt="Coffee beans drying in Ethiopia" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-          <figcaption>Coffee beans drying</figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <!-- Trade Process -->
-  <section class="section pale">
-    <div class="wrap">
-      <label>COFFEE TRADE</label>
-      <h2>A clear export process.</h2>
-      <div class="features">
-        <div>
-          <b>01</b>
-          <h3>Product Sourcing</h3>
-          <p>Focus on Ethiopian agricultural products suitable for international trade.</p>
-        </div>
-        <div>
-          <b>02</b>
-          <h3>Quality Focus</h3>
-          <p>Maintaining attention to product quality through the export process.</p>
-        </div>
-        <div>
-          <b>03</b>
-          <h3>International Service</h3>
-          <p>Professional communication with buyers and business partners.</p>
+        <div class="image-gallery">
+          <figure>
+            <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Coffee_beans_in_Ethiopia.jpg?width=1280" alt="Ethiopian coffee beans" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+            <figcaption>Ethiopian coffee beans</figcaption>
+          </figure>
+          <figure>
+            <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Bunna4_-_Roasting_coffee_beans.jpg?width=1280" alt="Coffee beans being roasted in Ethiopia" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+            <figcaption>Traditional coffee roasting</figcaption>
+          </figure>
+          <figure>
+            <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Coffee_Beans_Drying_(11586771164).jpg?width=1024" alt="Coffee beans drying in Ethiopia" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+            <figcaption>Coffee beans drying</figcaption>
+          </figure>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CTA -->
-  <section class="cta">
-    <div class="wrap">
-      <h2>Interested in Ethiopian coffee?</h2>
-      <a class="btn gold" target="_blank" rel="noopener" href="https://wa.me/251911349179">Chat on WhatsApp →</a>
+    <!-- Ethiopian Coffee Origins Section -->
+<section class="section pale">
+  <div class="wrap">
+    <div class="center">
+      <label>ETHIOPIAN COFFEE ORIGINS</label>
+      <h2>Discover the Diversity of Ethiopian Coffee</h2>
+      <p style="max-width: 750px; margin: 0 auto 10px; color: #4a5d55;">
+        Ethiopia is widely recognized as the birthplace of Arabica coffee. We source premium lots across Ethiopia's most renowned coffee-growing regions.
+      </p>
     </div>
-  </section>
 
-</main>
+    <div class="origins-grid">
 
-<footer>
-  <div class="wrap foot">
-    <div>
-      <a class="logo" href="index.html"><b>FG</b><span>FISIHA GUESH<small>IMPORT & EXPORT</small></span></a>
-      <p>Connecting Ethiopian agricultural products with international markets.</p>
-    </div>
-    <div>
-      <h4>Quick Links</h4>
-      <a href="about.html">About Us</a>
-      <a href="products.html">Products</a>
-      <a href="coffee.html">Coffee</a>
-      <a href="contact.html">Contact</a>
-    </div>
-    <div>
-      <h4>Products</h4>
-      <a href="coffee.html">Coffee</a>
-      <a href="vegetables.html">Vegetables</a>
-      <a href="oil-seeds.html">Oil Seeds</a>
-    </div>
-    <div>
-      <h4>Contact</h4>
-      <p>Addis Ababa, Ethiopia<br>Arada Sub City, Wereda 01<br>Atiklit Tera Building G010</p>
-      <a href="tel:+251911349179">+251-911-34-91-79</a>
-      <a href="mailto:fisihasamuel12@gmail.com">fisihasamuel12@gmail.com</a>
+      <!-- 1. Yirgacheffe -->
+      <article class="origin-card">
+        <div class="origin-pic">
+          <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Coffee_Beans_Drying_(11586771164).jpg?width=900" alt="Yirgacheffe Coffee Origin" loading="lazy">
+          <span class="origin-tag">Washed / Natural</span>
+        </div>
+        <div class="origin-content">
+          <span class="origin-region">Gedeo Zone, South Ethiopia</span>
+          <h3>Yirgacheffe</h3>
+          <p>Recognized for delicate floral aromas, vibrant acidity, and refined tea-like qualities with a clean finish.</p>
+          <div class="cup-profile">
+            <b>TYPICAL CUP PROFILE</b>
+            <span>Floral, lemon, bergamot, tea-like lightness & bright acidity.</span>
+          </div>
+          <div class="origin-footer">
+            <a class="link" href="contact.html">Inquire Lot →</a>
+            <a class="btn gold" style="padding: 8px 14px; margin: 0; font-size: 0.8rem;" target="_blank" rel="noopener" href="https://wa.me/251911349179">WhatsApp</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2. Sidama -->
+      <article class="origin-card">
+        <div class="origin-pic">
+          <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Coffee_sorting_process,_near_Hawassa.jpg?width=900" alt="Sidama Coffee Origin" loading="lazy">
+          <span class="origin-tag">Washed / Natural</span>
+        </div>
+        <div class="origin-content">
+          <span class="origin-region">Sidama Region</span>
+          <h3>Sidama</h3>
+          <p>Offers a harmonious balance of sweetness, fruit complexity, crisp acidity, and deep aromatic richness.</p>
+          <div class="cup-profile">
+            <b>TYPICAL CUP PROFILE</b>
+            <span>Sweet berries, citrus, stone fruit, cocoa, and floral notes.</span>
+          </div>
+          <div class="origin-footer">
+            <a class="link" href="contact.html">Inquire Lot →</a>
+            <a class="btn gold" style="padding: 8px 14px; margin: 0; font-size: 0.8rem;" target="_blank" rel="noopener" href="https://wa.me/251911349179">WhatsApp</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3. Harar -->
+      <article class="origin-card">
+        <div class="origin-pic">
+          <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Bunna4_-_Roasting_coffee_beans.jpg?width=900" alt="Harar Coffee Origin" loading="lazy">
+          <span class="origin-tag">Natural (Dry Processed)</span>
+        </div>
+        <div class="origin-content">
+          <span class="origin-region">Eastern Ethiopia</span>
+          <h3>Harar</h3>
+          <p>A legendary dry-processed origin celebrated for its bold, wine-like character and rich fruit-forward profile.</p>
+          <div class="cup-profile">
+            <b>TYPICAL CUP PROFILE</b>
+            <span>Wild berries, wine-like body, mocha, cocoa, and dark fruit.</span>
+          </div>
+          <div class="origin-footer">
+            <a class="link" href="contact.html">Inquire Lot →</a>
+            <a class="btn gold" style="padding: 8px 14px; margin: 0; font-size: 0.8rem;" target="_blank" rel="noopener" href="https://wa.me/251911349179">WhatsApp</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 4. Jimma -->
+      <article class="origin-card">
+        <div class="origin-pic">
+          <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Coffee_beans_in_Ethiopia.jpg?width=900" alt="Jimma Coffee Origin" loading="lazy">
+          <span class="origin-tag">Washed / Natural</span>
+        </div>
+        <div class="origin-content">
+          <span class="origin-region">Jimma Zone, Oromia</span>
+          <h3>Jimma</h3>
+          <p>Versatile coffees offering medium-to-full body, excellent structure, and suitability for various roasting styles.</p>
+          <div class="cup-profile">
+            <b>TYPICAL CUP PROFILE</b>
+            <span>Earthy undertones, cocoa, ripe fruit, and balanced acidity.</span>
+          </div>
+          <div class="origin-footer">
+            <a class="link" href="contact.html">Inquire Lot →</a>
+            <a class="btn gold" style="padding: 8px 14px; margin: 0; font-size: 0.8rem;" target="_blank" rel="noopener" href="https://wa.me/251911349179">WhatsApp</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 5. Nekemte & Gimbi -->
+      <article class="origin-card">
+        <div class="origin-pic">
+          <img src="https://tse1.mm.bing.net/th/id/OIP.kV2voeOx2OJHesYPAGnADAHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" loading="lazy">
+          <span class="origin-tag">Washed / Natural</span>
+        </div>
+        <div class="origin-content">
+          <span class="origin-region">Wellega Areas, Oromia</span>
+          <h3>Nekemte & Gimbi</h3>
+          <p>Grown in western Ethiopia, providing a sweet, fruit-forward cup with pleasant acidity and regional depth.</p>
+          <div class="cup-profile">
+            <b>TYPICAL CUP PROFILE</b>
+            <span>Fruity sweetness, berry accents, wine-like notes, and smooth body.</span>
+          </div>
+          <div class="origin-footer">
+            <a class="link" href="contact.html">Inquire Lot →</a>
+            <a class="btn gold" style="padding: 8px 14px; margin: 0; font-size: 0.8rem;" target="_blank" rel="noopener" href="https://wa.me/251911349179">WhatsApp</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 6. Illubabor -->
+      <article class="origin-card">
+        <div class="origin-pic">
+          <img src="https://interamericancoffee.com/wp-content/uploads/2026/03/Zambia-Lupili-Cherry-in-Hand-600x539.jpeg" alt="Illubabor Coffee Origin" loading="lazy">
+          <span class="origin-tag">Washed / Natural</span>
+        </div>
+        <div class="origin-content">
+          <span class="origin-region">Illubabor Zone, Southwestern Ethiopia</span>
+          <h3>Illubabor</h3>
+          <p>Harvested from Ethiopia's lush southwestern forests, offering complex aromatics and balanced acidity.</p>
+          <div class="cup-profile">
+            <b>TYPICAL CUP PROFILE</b>
+            <span>Variable floral notes, tea-like sweetness, lively acidity, and full body.</span>
+          </div>
+          <div class="origin-footer">
+            <a class="link" href="contact.html">Inquire Lot →</a>
+            <a class="btn gold" style="padding: 8px 14px; margin: 0; font-size: 0.8rem;" target="_blank" rel="noopener" href="https://wa.me/251911349179">WhatsApp</a>
+          </div>
+        </div>
+      </article>
+
     </div>
   </div>
-  <div class="bottom wrap">© 2026 Fisiha Guesh Import and Export. All Rights Reserved.</div>
-</footer>
+</section>
 
-<script src="js/main.js"></script>
+    <section class="cta">
+      <div class="wrap">
+        <h2>Interested in Ethiopian coffee?</h2>
+        <a class="btn gold" target="_blank" rel="noopener" href="https://wa.me/251911349179">Chat on WhatsApp →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <div>
+        <a class="logo" href="index.html">
+          <img src="images/fish-ww.png" alt="Fisha Import and Export Logo" class="logo-img">
+        </a>
+        <p>Connecting Ethiopian agricultural products with international markets.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="about.html">About Us</a>
+        <a href="products.html">Products</a>
+        <a href="coffee.html">Coffee</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Products</h4>
+        <a href="coffee.html">Coffee</a>
+        <a href="vegetables.html">Vegetables</a>
+        <a href="oil-seeds.html">Oil Seeds</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Addis Ababa, Ethiopia<br>Arada Sub City, Wereda 01<br>Atiklit Tera Building G010</p>
+        <a href="tel:+251911349179">+251-911-34-91-79</a>
+        <a href="mailto:fisihasamuel12@gmail.com">fisihasamuel12@gmail.com</a>
+      </div>
+    </div>
+    <div class="bottom wrap">© 2026 Fisha Import and Export. All Rights Reserved.</div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
