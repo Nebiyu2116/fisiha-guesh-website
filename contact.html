@@ -59,30 +59,39 @@
         </div>
       </div>
 
-      <form id="form" action="contact.php" method="post" accept-charset="UTF-8">
-        <label>FULL NAME
-          <input required name="name" maxlength="100" autocomplete="name">
-        </label>
-        <label>EMAIL
-          <input required type="email" name="email" maxlength="254" autocomplete="email">
-        </label>
-        <label>PHONE
-          <input name="phone" maxlength="30" autocomplete="tel">
-        </label>
-        <label>SUBJECT
-          <input name="subject" maxlength="150">
-        </label>
-        <label>MESSAGE
-          <textarea required name="message" maxlength="5000" rows="6"></textarea>
-        </label>
-        <div class="honeypot" aria-hidden="true">
-          <label>Website
-            <input name="website" tabindex="-1" autocomplete="off">
-          </label>
-        </div>
-        <button class="btn dark">Send Message →</button>
-        <p class="note">Your message is submitted securely to our website mail handler and sent to fisihasamuel12@gmail.com.</p>
-      </form>
+<form id="form" action="https://api.web3forms.com/submit" method="POST">
+  <!-- Web3Forms Access Key for testing -->
+  <input type="hidden" name="access_key" value="fc88d4c5-5546-497e-8eae-2fefe576c6db">
+  
+  <!-- Redirect back to your Vercel site with success status -->
+  <input type="hidden" name="redirect" value="https://fisiha-guesh-website.vercel.app/contact.html?sent=1">
+
+  <label>FULL NAME
+    <input required name="name" maxlength="100" autocomplete="name">
+  </label>
+  <label>EMAIL
+    <input required type="email" name="email" maxlength="254" autocomplete="email">
+  </label>
+  <label>PHONE
+    <input name="phone" maxlength="30" autocomplete="tel">
+  </label>
+  <label>SUBJECT
+    <input name="subject" maxlength="150">
+  </label>
+  <label>MESSAGE
+    <textarea required name="message" maxlength="5000" rows="6"></textarea>
+  </label>
+  
+  <!-- Honeypot spam protection -->
+  <div class="honeypot" style="display:none;" aria-hidden="true">
+    <label>Website
+      <input name="website" tabindex="-1" autocomplete="off">
+    </label>
+  </div>
+
+  <button class="btn dark">Send Message →</button>
+  <p class="note">Your message is submitted securely to Fisha Import and Export.</p>
+</form>
     </section>
   </main>
 
