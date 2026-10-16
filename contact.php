@@ -1,8 +1,8 @@
 <?php
-// Fisiha Guesh Import & Export - secure contact form handler.
+// Fisha Import & Export - secure contact form handler.
 declare(strict_types=1);
 
-const RECIPIENT = 'fisihasamuel12@gmail.com';
+const RECIPIENT = 'hailenebiyu40@gmail.com';
 const MAX_NAME = 100;
 const MAX_EMAIL = 254;
 const MAX_PHONE = 30;
@@ -52,19 +52,23 @@ foreach ([$name, $email, $phone, $subject] as $value) {
 $subject = $subject !== '' ? $subject : 'Website Business Inquiry';
 $safeSubject = preg_replace('/[^\p{L}\p{N}\s\-_,.!?&()]/u', '', $subject) ?: 'Website Business Inquiry';
 
-$body = "New website inquiry\n\n"
+$body = "New website inquiry for Fisha Import & Export\n\n"
       . "Name: {$name}\n"
       . "Email: {$email}\n"
       . "Phone: " . ($phone !== '' ? $phone : 'Not provided') . "\n"
       . "Subject: {$safeSubject}\n\n"
       . "Message:\n{$message}\n";
 
+// Host domain detection for compliant sending
+$domain = !empty($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : 'fishaimportexport.com';
+$fromEmail = 'no-reply@' . preg_replace('/^www\./', '', $domain);
+
 $headers = "MIME-Version: 1.0\r\n"
          . "Content-Type: text/plain; charset=UTF-8\r\n"
-         . "From: Fisiha Guesh Website <" . RECIPIENT . ">\r\n"
-         . "Reply-To: {$email}\r\n";
+         . "From: Fisha Import & Export Website <{$fromEmail}>\r\n"
+         . "Reply-To: {$name} <{$email}>\r\n";
 
-if (!mail(RECIPIENT, $safeSubject, $body, $headers)) {
+if (!mail(RECIPIENT, "Website Inquiry: " . $safeSubject, $body, $headers)) {
     fail('The message could not be sent by the hosting mail server. Please contact us by WhatsApp or email.');
 }
 

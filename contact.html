@@ -118,5 +118,12 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script>
+    // Show notification if redirection query string contains ?sent=1
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('sent') === '1') {
+      alert('Thank you! Your message has been sent successfully to fisihasamuel12@gmail.com.');
+    }
+  </script>
 </body>
 </html>
