@@ -4,9 +4,107 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/global.css">
-  <title>Contact | Fisha Import & Export</title>
+  <title>B2B Business Enquiry | Fisha Import & Export</title>
+  <style>
+    /* B2B Contact Form Custom Styles */
+    .contact-form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .contact-form-grid .full-width {
+      grid-column: span 2;
+    }
+    .form-group {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+    .form-group label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      color: #c79c46;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+    }
+    .form-group input, 
+    .form-group select, 
+    .form-group textarea {
+      padding: 12px 15px;
+      border: 1px solid #d1dcd5;
+      border-radius: 8px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.95rem;
+      color: #18342b;
+      background: #fff;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+    .form-group input:focus, 
+    .form-group select:focus, 
+    .form-group textarea:focus {
+      outline: none;
+      border-color: #174536;
+      box-shadow: 0 0 0 3px rgba(23, 69, 54, 0.1);
+    }
+    
+    /* Refined Section Headers Style */
+    .form-section-title {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #174536;
+      margin: 30px 0 18px 0;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #e2ede7;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .form-section-title::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 16px;
+      background: #c79c46;
+      border-radius: 2px;
+    }
+
+    .checkbox-label {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.95rem;
+      color: #2c4239;
+      text-transform: none !important;
+      font-weight: 500 !important;
+      cursor: pointer;
+    }
+    .checkbox-label input {
+      width: 20px;
+      height: 20px;
+      accent-color: #174536;
+      cursor: pointer;
+    }
+    .privacy-note {
+      font-size: 0.82rem;
+      color: #6c7d75;
+      line-height: 1.5;
+      margin-top: 15px;
+    }
+    @media (max-width: 768px) {
+      .contact-form-grid {
+        grid-template-columns: 1fr;
+      }
+      .contact-form-grid .full-width {
+        grid-column: span 1;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -30,68 +128,137 @@
   <main>
     <section class="pagehero">
       <div class="wrap">
-        <label>CONTACT US</label>
-        <h1>Let's start a<br><em>conversation.</em></h1>
-        <p>Contact Fisha Import and Export in Addis Ababa, Ethiopia.</p>
+        <label>B2B EXPORT ENQUIRY</label>
+        <h1>Let's start a<br><em>business conversation.</em></h1>
+        <p>Connect with Fisha Import and Export in Addis Ababa, Ethiopia for international trade and wholesale supply.</p>
       </div>
     </section>
 
     <section class="section wrap contact">
       <div>
         <label>GET IN TOUCH</label>
-        <h2>We are ready to hear from you.</h2>
+        <h2>We are ready to support your import requirements.</h2>
+        
         <div class="contactitem">
           <b>LOCATION</b>
           <p>Addis Ababa, Ethiopia<br>Arada Sub City, Wereda 01<br>Atiklit Tera Building G010</p>
         </div>
+        
         <div class="contactitem">
           <b>PHONE</b>
           <a href="tel:+251911349179">+251-911-34-91-79</a>
         </div>
+        
         <div class="contactitem">
-          <b>WHATSAPP</b>
+          <b>WHATSAPP (Alternative Contact)</b>
           <a href="https://wa.me/251911349179">+251-911-34-91-79</a>
           <a href="https://wa.me/251934095031">+251-934-09-50-31</a>
         </div>
+        
         <div class="contactitem">
-          <b>EMAIL</b>
+          <b>BUSINESS EMAIL</b>
           <a href="mailto:fisihasamuel12@gmail.com">fisihasamuel12@gmail.com</a>
         </div>
       </div>
 
-<form id="form" action="https://api.web3forms.com/submit" method="POST">
-  <!-- Web3Forms Access Key for testing -->
-  <input type="hidden" name="access_key" value="fc88d4c5-5546-497e-8eae-2fefe576c6db">
-  
-  <!-- Redirect back to your Vercel site with success status -->
-  <input type="hidden" name="redirect" value="https://fisiha-guesh-website.vercel.app/contact.html?sent=1">
+      <!-- B2B Enquiry Form Powered by Web3Forms for Vercel -->
+      <form id="form" action="https://api.web3forms.com/submit" method="POST">
+        
+        <!-- Replace with your Web3Forms Access Key generated for fisihasamuel12@gmail.com -->
+        <input type="hidden" name="access_key" value="YOUR_BUSINESS_ACCESS_KEY_HERE">
+        <input type="hidden" name="subject" value="New B2B Export Enquiry - Fisha Import & Export">
+        <input type="hidden" name="redirect" value="https://fisiha-guesh-website.vercel.app/contact.html?sent=1">
 
-  <label>FULL NAME
-    <input required name="name" maxlength="100" autocomplete="name">
-  </label>
-  <label>EMAIL
-    <input required type="email" name="email" maxlength="254" autocomplete="email">
-  </label>
-  <label>PHONE
-    <input name="phone" maxlength="30" autocomplete="tel">
-  </label>
-  <label>SUBJECT
-    <input name="subject" maxlength="150">
-  </label>
-  <label>MESSAGE
-    <textarea required name="message" maxlength="5000" rows="6"></textarea>
-  </label>
-  
-  <!-- Honeypot spam protection -->
-  <div class="honeypot" style="display:none;" aria-hidden="true">
-    <label>Website
-      <input name="website" tabindex="-1" autocomplete="off">
-    </label>
-  </div>
+        <!-- Honeypot Spam Protection -->
+        <div class="honeypot" style="display:none;" aria-hidden="true">
+          <input name="botcheck" type="checkbox" tabindex="-1" autocomplete="off">
+        </div>
 
-  <button class="btn dark">Send Message →</button>
-  <p class="note">Your message is submitted securely to Fisha Import and Export.</p>
-</form>
+        <div class="form-section-title">1. Contact Information</div>
+        <div class="contact-form-grid">
+          <div class="form-group">
+            <label>Full Name *</label>
+            <input required name="name" maxlength="100" autocomplete="name" placeholder="Enter your full name">
+          </div>
+          <div class="form-group">
+            <label>Company Name *</label>
+            <input required name="company" maxlength="150" autocomplete="organization" placeholder="Your business name">
+          </div>
+          <div class="form-group">
+            <label>Business Email Address *</label>
+            <input required type="email" name="email" maxlength="254" autocomplete="email" placeholder="name@company.com">
+          </div>
+          <div class="form-group">
+            <label>Country / Target Market *</label>
+            <input required name="country_market" maxlength="100" placeholder="e.g., Germany, USA, UAE">
+          </div>
+        </div>
+
+        <div class="form-section-title">2. Business & Product Requirements</div>
+        <div class="contact-form-grid">
+          <div class="form-group">
+            <label>Buyer Type *</label>
+            <select required name="buyer_type">
+              <option value="" disabled selected>Select your business type</option>
+              <option value="Importer">Importer</option>
+              <option value="Wholesaler / Distributor">Wholesaler / Distributor</option>
+              <option value="Coffee Roaster">Coffee Roaster</option>
+              <option value="Retailer / Food Business">Retailer / Food Business</option>
+              <option value="Other Business">Other Business</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Product Category *</label>
+            <select required name="product_category">
+              <option value="" disabled selected>Select product category</option>
+              <option value="Coffee">Coffee</option>
+              <option value="Vegetables">Vegetables</option>
+              <option value="Oil Seeds">Oil Seeds</option>
+              <option value="Legumes / Pulses">Legumes / Pulses</option>
+              <option value="Other Agricultural Products">Other Agricultural Products</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Preferred Product / Specific Item</label>
+            <input name="specific_item" maxlength="150" placeholder="e.g., Yirgacheffe Coffee, Sesame Seeds">
+          </div>
+          <div class="form-group">
+            <label>Preferred Origin / Sourcing Location</label>
+            <input name="preferred_origin" maxlength="100" placeholder="e.g., Sidama, Jimma">
+          </div>
+          <div class="form-group">
+            <label>Processing, Grade, or Quality Requirements</label>
+            <input name="quality_requirements" maxlength="150" placeholder="e.g., Washed Gr.2, Natural, Organic">
+          </div>
+          <div class="form-group">
+            <label>Estimated Order Quantity & Unit</label>
+            <input name="estimated_quantity" maxlength="100" placeholder="e.g., 2 Containers, 20 Metric Tons">
+          </div>
+          <div class="form-group full-width">
+            <label>Destination Country and Port (if known)</label>
+            <input name="destination_port" maxlength="150" placeholder="e.g., Port of Hamburg, Germany">
+          </div>
+        </div>
+
+        <div class="form-section-title">3. Additional Details & Submission</div>
+        <div class="form-group">
+          <label>Message / Additional Requirements</label>
+          <textarea name="message" maxlength="5000" rows="5" placeholder="Provide any additional specifications, delivery timelines, or packaging preferences..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label class="checkbox-label">
+            <input type="checkbox" name="request_samples_specs" value="Yes">
+            I would like to request product specifications or sample arrangements for evaluation.
+          </label>
+        </div>
+
+        <button class="btn gold" style="width: 100%; margin-top: 15px; text-align: center; padding: 14px;">Submit Business Enquiry →</button>
+        
+        <p class="privacy-note">
+          <b>Privacy Notice:</b> The information collected in this form is used solely by Fisha Import and Export to evaluate your wholesale trade requirements and respond to your commercial enquiry. We do not share your details with third parties.
+        </p>
+      </form>
     </section>
   </main>
 
@@ -128,10 +295,10 @@
 
   <script src="js/main.js"></script>
   <script>
-    // Show notification if redirection query string contains ?sent=1
+    // Show success notification if URL contains ?sent=1
     const urlParams = new URLSearchParams(window.location.search);
     if (urlParams.get('sent') === '1') {
-      alert('Thank you! Your message has been sent successfully to fisihasamuel12@gmail.com.');
+      alert('Thank you! Your B2B business enquiry has been submitted successfully to fisihasamuel12@gmail.com. Our team will review your requirements and follow up shortly.');
     }
   </script>
 </body>
